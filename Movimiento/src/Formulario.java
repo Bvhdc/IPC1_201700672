@@ -1,7 +1,7 @@
 
 public class Formulario extends javax.swing.JFrame {
 public Personaje jug;
-public int numjug=1;
+public int numjug;
 Juego dad=new Juego();
 public int[] ordenper;
 public int v;
