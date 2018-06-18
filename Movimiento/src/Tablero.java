@@ -22,6 +22,7 @@ public class Tablero {
     public Miv min;
     public Miv vid;
     
+    
     public Tablero(int tam, JPanel panel){
         this.tam=tam;
         this.fondo=panel;
@@ -45,6 +46,7 @@ public class Tablero {
         min= new Miv();
         vid= new Miv();
         
+        
         //per.posper=0;
 //        Personaje per =new Personaje();
         
@@ -61,14 +63,17 @@ public class Tablero {
     Random random=new Random();
     int x= random.nextInt(tam);
     int y= random.nextInt(tam);
+    if(vecL[x][y]!=0){x= random.nextInt(tam);
+    y= random.nextInt(tam);}
     vecL[x][y]=8;
- 
     repintar();
     }
     for(int i=0; i<=a; i++){
     Random random=new Random();
     int x= random.nextInt(tam);
     int y= random.nextInt(tam);
+    if(vecL[x][y]!=0){x= random.nextInt(tam);
+    y= random.nextInt(tam);}
     vecL[x][y]=7; 
     repintar();
     

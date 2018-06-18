@@ -14,20 +14,20 @@ import javax.swing.ImageIcon;
  * @author dfend
  */
 public class Personaje {
-    public int pospery;
-    public int posperx;
-    public int posper1y;
-    public int posper1x;
-    public int posper2y;
-    public int posper2x;
-    public int posper3y;
-    public int posper3x;
-    public int posper4y;
-    public int posper4x;
-    public int posper5y;
-    public int posper5x;
-    public int posper6y;
-    public int posper6x;
+    public int pospery=1;
+    public int posperx=3;
+    public int posper1y=5;
+    public int posper1x=6;
+    public int posper2y=2;
+    public int posper2x=1;
+    public int posper3y=7;
+    public int posper3x=1;
+    public int posper4y=6;
+    public int posper4x=3;
+    public int posper5y=9;
+    public int posper5x=8;
+    public int posper6y=7;
+    public int posper6x=2;
     public void posicionesiniciales(int tam){
     Random random=new Random();
 this.posper1x=random.nextInt(tam-1);
