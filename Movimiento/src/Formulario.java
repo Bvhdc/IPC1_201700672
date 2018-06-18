@@ -346,7 +346,7 @@ fondo.removeAll();
 fondo.repaint();
 tab =new Tablero(Integer.parseInt(tam.getText()),fondo);
         tablerocreado=true;
-//tab.generarelem(tab.tam);
+tab.generarelem(tab.tam);
 Personaje per=new Personaje();
 per.posicionesiniciales(Integer.parseInt(tam.getText()));
 
