@@ -1,5 +1,6 @@
 
 import java.awt.Image;
+import java.util.Random;
 import javax.swing.ImageIcon;
 
 /*
@@ -13,20 +14,36 @@ import javax.swing.ImageIcon;
  * @author dfend
  */
 public class Personaje {
-    public int pospery=0;
-    public int posperx=1;
-    public int posper1y=0;
-    public int posper1x=1;
-    public int posper2y=5;
-    public int posper2x=5;
-    public int posper3y=0;
-    public int posper3x=1;
-    public int posper4y=0;
-    public int posper4x=1;
-    public int posper5y=0;
-    public int posper5x=1;
-    public int posper6y=0;
-    public int posper6x=1;
+    public int pospery;
+    public int posperx;
+    public int posper1y;
+    public int posper1x;
+    public int posper2y;
+    public int posper2x;
+    public int posper3y;
+    public int posper3x;
+    public int posper4y;
+    public int posper4x;
+    public int posper5y;
+    public int posper5x;
+    public int posper6y;
+    public int posper6x;
+    public void posicionesiniciales(int tam){
+    Random random=new Random();
+this.posper1x=random.nextInt(tam-1);
+this.posper1y=random.nextInt(tam-1);
+this.posper2x=random.nextInt(tam-1);
+this.posper2y=random.nextInt(tam-1);
+this.posper3x=random.nextInt(tam-1);
+this.posper3y=random.nextInt(tam-1);
+this.posper4x=random.nextInt(tam-1);
+this.posper4y=random.nextInt(tam-1);
+this.posper5x=random.nextInt(tam-1);
+this.posper5y=random.nextInt(tam-1);
+this.posper6x=random.nextInt(tam-1);
+this.posper6y=random.nextInt(tam-1);
+
+}
     
    public ImageIcon obtenerImagen(int tamx,int tamy,int jug){
     if(jug==1){ImageIcon per=new ImageIcon(getClass().getResource("/Imagenes/PrincesaJugador1.png"));
@@ -44,17 +61,17 @@ public class Personaje {
     Image tamimagen=imagen.getScaledInstance(tamx,tamy,Image.SCALE_SMOOTH);
     per= new ImageIcon(tamimagen);
         return per;}
-    if(jug==4){ImageIcon per=new ImageIcon(getClass().getResource("/Imagenes/Packman.png"));
+    if(jug==4){ImageIcon per=new ImageIcon(getClass().getResource("/Imagenes/Possessed_Zelda.png"));
     Image imagen= per.getImage();
     Image tamimagen=imagen.getScaledInstance(tamx,tamy,Image.SCALE_SMOOTH);
     per= new ImageIcon(tamimagen);
         return per;}
-    if(jug==5){ImageIcon per=new ImageIcon(getClass().getResource("/Imagenes/Packman.png"));
+    if(jug==5){ImageIcon per=new ImageIcon(getClass().getResource("/Imagenes/Dark_Link.jpg"));
     Image imagen= per.getImage();
     Image tamimagen=imagen.getScaledInstance(tamx,tamy,Image.SCALE_SMOOTH);
     per= new ImageIcon(tamimagen);
         return per;}
-    if(jug==6){ImageIcon per=new ImageIcon(getClass().getResource("/Imagenes/Packman.png"));
+    if(jug==6){ImageIcon per=new ImageIcon(getClass().getResource("/Imagenes/DarkS.png"));
     Image imagen= per.getImage();
     Image tamimagen=imagen.getScaledInstance(tamx,tamy,Image.SCALE_SMOOTH);
     per= new ImageIcon(tamimagen);
@@ -126,6 +143,7 @@ if()
 
 
 }*/
+
 }
    
    

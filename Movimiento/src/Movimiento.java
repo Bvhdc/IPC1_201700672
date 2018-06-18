@@ -45,6 +45,8 @@ public class Movimiento extends Thread{
             int y=tab.per.getposper("y", cas);
             tab.vecL[x][tab.tam-1]=0;
             tab.vecG[x][tab.tam-1].setIcon(null);
+            tab.vecL[x][tab.tam-1]=0;
+            tab.vecG[x][tab.tam-1].setIcon(null);
             
             tab.per.setposper(x,0,cas);
             tab.vecL[tab.per.getposper("x",cas)][tab.per.getposper("y", cas)]=cas;
@@ -55,7 +57,7 @@ public class Movimiento extends Thread{
         }else{
             try {
                 int x=tab.per.getposper("x",cas);
-            int y=tab.per.getposper("y", cas);
+                int y=tab.per.getposper("y", cas);
                 tab.vecL[x][y]=0;
                 tab.vecG[x][y].setIcon(null);
                 tab.repintar();
@@ -109,7 +111,7 @@ public class Movimiento extends Thread{
         
     }
     public void moverDerecha(int cantidad){
-        if(cantidad<=0){
+        if(cantidad==0){
             return;
         }
         if(comprobarfin()){
@@ -127,7 +129,7 @@ public class Movimiento extends Thread{
             try {
                 //mover una posicion
                 int x=tab.per.getposper("x",cas);
-            int y=tab.per.getposper("y", cas);
+                int y=tab.per.getposper("y", cas);
                 tab.vecL[x][y]=0;
                 tab.vecG[x][y].setIcon(null);
                 tab.repintar();

@@ -83,6 +83,7 @@ public class Tablero {
             
             if(vecL[i][j]==0){
                 casilla= new JLabel();
+                casilla.setIcon(null);
             } if(vecL[i][j]==1){
                 casilla=new JLabel(this.per.obtenerImagen(tambloquex,tambloquey,1));
             } if(vecL[i][j]==2){
@@ -91,10 +92,13 @@ public class Tablero {
                 casilla=new JLabel(this.per3.obtenerImagen(tambloquex,tambloquey,3));
             } if(vecL[i][j]==4){
                 casilla=new JLabel(this.per4.obtenerImagen(tambloquex,tambloquey,4));
+                
             } if(vecL[i][j]==5){
                 casilla=new JLabel(this.per5.obtenerImagen(tambloquex,tambloquey,5));
+                
             } if(vecL[i][j]==6){
                 casilla=new JLabel(this.per6.obtenerImagen(tambloquex,tambloquey,6));
+                
             }
             if(vecL[i][j]==8){
                 casilla=new JLabel(this.vid.obtenerimagenv(tambloquex,tambloquey));}
