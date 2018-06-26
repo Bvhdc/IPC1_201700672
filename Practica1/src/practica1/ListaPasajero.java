@@ -31,6 +31,8 @@ public class ListaPasajero {
     public void remover(){
     Pasajero aux1 = null,aux2;
     aux2=primero;
+    
+    if(primero.sig!=null){
     while(aux2.sig!=null){
         aux1=aux2;
         aux2=aux2.sig;
@@ -38,7 +40,10 @@ public class ListaPasajero {
     lista.eliminar(aux2.getId());
     aux1.sig=null;
     }
+    else primero=null;
+    }
     public void imprimir(JTextArea consola){
+        consola.append("**********lista pasajeros**************\n");
     if(primero==null){
             consola.append("LISTA VACIA\n");
         }else{
@@ -51,6 +56,7 @@ public class ListaPasajero {
             }
             
         }
+    consola.append("********final lista pasajeros***********\n");
     lista.recorrer(consola);
        }
     

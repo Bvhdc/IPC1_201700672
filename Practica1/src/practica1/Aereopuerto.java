@@ -40,7 +40,7 @@ public class Aereopuerto {
     }
     public void remover(ListaEspera es){
     //ListaEspera le=new ListaEspera();
-    if(primero!=null){
+    if(primero!=null&&primero.sig!=null){
             NodoAvion aux=primero;
             NodoAvion auxant=null;
             //lo recorremos hasta el último
@@ -75,7 +75,7 @@ public class Aereopuerto {
             }
             
         }
-    else return;
+    else primero=null;
     }
     public void imprimir(JTextArea consola,int turno){
        consola.append("****************Turno"+turno+"******************\n");
