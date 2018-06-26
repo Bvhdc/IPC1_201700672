@@ -62,15 +62,15 @@ public class ListaMaletas {
        }
     public void recorrer(JTextArea consola){
          if(primero==null)
-                   System.out.println("<-->NULL<-->");
+                   consola.append("<-->NULL<-->");
          else{
                    Maleta aux=primero;
-                   consola.append("<--> Inicio");
+                   consola.append("*****InicioMaletas***********\n");
                    do{
                             consola.append("Maleta:"+aux.getId()/*+" , "+aux.getDpi()+" ]"*/+"\n");
                             aux=aux.sig;
                    }while(aux!=primero);
-                   System.out.println(" <-->NULL<-->");
+                   consola.append("***********Final Maletas*********************\n");
          }
        }
 }

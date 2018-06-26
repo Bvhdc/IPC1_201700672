@@ -152,7 +152,7 @@ ListaPasajero lp=new ListaPasajero();
         ar.imprimir(jTextArea1, this.turno);
         lp.imprimir(jTextArea1);
         for(int i=0;i<5;i++)lp.remover();
-         es.remover(ma);
+        for(int i=1;i<(this.num=Integer.parseInt(jTextField1.getText()));i++) es.remover(ma);
         es.recorrer(jTextArea1);
         
        

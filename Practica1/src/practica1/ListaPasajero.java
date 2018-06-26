@@ -40,7 +40,7 @@ public class ListaPasajero {
     }
     public void imprimir(JTextArea consola){
     if(primero==null){
-            System.out.println("LISTA VACIA");
+            consola.append("LISTA VACIA\n");
         }else{
             Pasajero aux=primero;
             while (aux!=null){

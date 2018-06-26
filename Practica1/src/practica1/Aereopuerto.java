@@ -78,7 +78,7 @@ public class Aereopuerto {
     else primero=null;
     }
     public void imprimir(JTextArea consola,int turno){
-       consola.append("*****Turno"+turno+"***********\n");
+       consola.append("****************Turno"+turno+"******************\n");
        if(primero==null){
             consola.append("LISTA VACIA"+"\n");
         }else{
